@@ -14,7 +14,11 @@ body {
     /* margin: 0 auto; */
     max-width: 960px;
     width: 100%;
-    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding-inline: 155px; */
     align-items: center;
     /* display: grid;
     grid-template-columns: repeat(3, minmax(300px,1fr));
@@ -27,14 +31,25 @@ body {
     display: grid;
     /* grid-template-areas: 'header header header' 'hlife hlife hlife' 'arIntel fTracker hLifestyle' 'tProtocol tProtocol tProtocol' ''; */
     grid-template-columns: auto auto auto;
-    padding: 15px;
+    grid-column-gap: 20px;
+    /* padding-inline: 30px; */
+    align-items: center;
+    justify-content: center;
     /* border: solid; */
 } 
+.cards .card{
+    border: ridge;
+    /* border-width: 10px; */
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
+}
 header{
     /* grid-column: span 4;
     grid-row: 1; */
     /* justify-content: space-between; */
     align-items: baseline;
+    padding: 0px;
 }
 
 h1{
@@ -43,28 +58,33 @@ h1{
     
 }
 
-ul li{
+ul{
+    text-align: right;
     list-style: none;
-    display: inline;
-    margin: 0px 20px 0px 0px;
-    /* grid-column: 3; */
-    float: right;
-    
+}
+
+li{ 
+    display: inline-block;
+    margin: 0px 20px 0px 0px; 
 }
 
 .overview-hero .container img{
     width:150px;
     height: 150px;
     float: left;
-    padding: 10px;
+    padding-left: 70px;
+    padding-right: 30px;
 }
 
 .overview-hero .container .overview-hero-text{
     /* grid-area: 'header1'; */
     font-size: 16px;
     background-color: aqua;
-    grid-row: 2;
+    /* grid-row: 2; */
     /*grid-column: 2; */
+}
+.overview-hero .container {
+    background-color: aqua;
 }
 
 /* .container section .overview-hero{
@@ -111,4 +131,56 @@ ul li{
     display: grid;
     grid-template-rows: auto auto auto;
     grid-row-gap: 10px;
+}
+
+.testing .container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+.testing .container .testing-description{
+    float:left;
+    text-align: left;
+}
+
+.testing .container .cta{
+    float:right;
+    text-align: center;
+}
+
+.newsletter .container{
+    text-align: center;
+    /* display: grid;
+    grid-template-areas: 'email btn'; */
+    /* margin-left: 50%; */
+    color: white;
+    background-color: #48BB78;
+}
+
+.newsletter .container .form-group{
+    /* display: grid;
+    grid-template-areas: 'text' 'email btn' ; */
+    /* grid-template-columns: 75% 25%; */
+    /* margin: 0%; */
+    background-color: #48BB78;
+   
+}
+
+.newsletter .container .form-group #email{
+    width: 250px;
+    height: 43px;
+    /* grid-area: 'email'; */
+    border: solid red;
+    
+    float: left;
+    margin-left: 30%;
+}
+
+button{
+    /* float: right; */
+    color: white;
+    font-size: 20px;
+    padding: 10px 24px;
+    margin-right: 27%;
+    background-color: #5A67D8;
+    /* grid-area: 'btn'; */
 }
