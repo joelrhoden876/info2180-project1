@@ -10,7 +10,6 @@ button.onclick = function(event){
     event.preventDefault();
 
     if (input.value < 1){
-        // console.log("Please Enter A Valid Email Address");
         message.innerHTML ="Please Enter A Valid Email Address";
     }else{
         message.innerHTML ="Thank You! Your email address " + input.value +" has been added to our mailing list!";
